@@ -11,8 +11,6 @@ describe ('Redirect link functionality', () => {
     const status200 = await $('//*[@id="content"]/div/ul/li[1]/a');
     await status200.click();
 
-    // const text = await $('//*[@id="content"]/div/p').getText();
-    // expect(text).toBe('This page returned a 200 status code.
     const resultText = await $('//*[@id="content"]/div/p').getText();
     expect(resultText).toContain('This page returned a 200 status code.');
 
