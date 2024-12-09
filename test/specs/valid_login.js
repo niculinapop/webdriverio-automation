@@ -1,5 +1,4 @@
-//const { WEB } = require('../../locators/locatorPath');
-
+const {WEB} = require('../../locators/locatorPath.js');
 describe('Valid login authentication', () => {
   
   it('should loggin successfully', async () => {
@@ -8,7 +7,7 @@ describe('Valid login authentication', () => {
     const formAuthenticationLink = await $('//*[@id="content"]/ul/li[21]/a');
     await formAuthenticationLink.click();
 
-    const usernameInput = await $('#username');
+    const usernameInput = await $(WEB.LOGIN.USERNAME_INPUT);
     const passwordInput = await $('#password');
     await usernameInput.setValue('tomsmith');
     await passwordInput.setValue('SuperSecretPassword!');
@@ -17,6 +16,7 @@ describe('Valid login authentication', () => {
     await loginButton.click();
 
     const logoutButton = await $('//*[@id="content"]/div/a');
+
     expect(await logoutButton.isDisplayed()).toBe(true);
     
   });
