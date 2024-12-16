@@ -6,6 +6,7 @@ export const web = {
     REDIRECT_LINK: '//*[@id="content"]/ul/li[36]/a',
     NOTIFICATION_MESSAGES_LINK: '//*[@id="content"]/ul/li[35]/a',
     CHECKBOXES_LINK: '//*[@id="content"]/ul/li[6]/a',
+    ENTRY_AD_LINK: '//*[@id="content"]/ul/li[15]/a',
   },
   LOGIN: {
     USERNAME_INPUT: '#username',
@@ -33,6 +34,10 @@ export const web = {
   },
   CHECKBOXES: {
     UNCHECKED: '//*[@id="checkboxes"]/input[1]',
+  },
+  ENTRY_AD: {
+    MODAL_TITLE: '.modal-title',
+    CLOSE_BUTTON: '//*[@id="modal"]/div[2]/div[3]/p',
   }
 };
 
