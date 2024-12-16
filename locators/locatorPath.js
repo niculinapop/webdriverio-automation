@@ -1,4 +1,5 @@
-const WEB = {
+
+export const web = {
   LINKS: {
     FORM_AUTH_LINK: '//*[@id="content"]/ul/li[21]/a',
     ADD_REMOVE_ELEMENT_LINK: '//*[@id="content"]/ul/li[2]/a',
@@ -27,4 +28,3 @@ const WEB = {
   }
 };
 
-module.exports = {WEB};

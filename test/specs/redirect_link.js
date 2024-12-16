@@ -1,17 +1,18 @@
+import {web} from '../../locators/locatorPath.js';
 describe ('Redirect link functionality', () => {
   it('should redirect to the correct page', async () => {
     await browser.url('https://the-internet.herokuapp.com/');
 
-    const redirectLink = await $('//*[@id="content"]/ul/li[36]/a');
+    const redirectLink = await $(web.LINKS.REDIRECT_LINK);
     await redirectLink.click();
 
-    const statusCodePage = await $('#redirect');
+    const statusCodePage = await $(web.REDIRECT.STATUS_CODE_PAGE);
     await statusCodePage.click();
 
-    const status200 = await $('//*[@id="content"]/div/ul/li[1]/a');
+    const status200 = await $(web.REDIRECT.STATUS_200);
     await status200.click();
 
-    const resultText = await $('//*[@id="content"]/div/p').getText();
+    const resultText = await $(web.REDIRECT.RESULT_TEXT).getText();
     expect(resultText).toContain('This page returned a 200 status code.');
 
   })
