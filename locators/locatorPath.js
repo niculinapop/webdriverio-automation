@@ -5,6 +5,7 @@ export const web = {
     DRAG_AND_DROP_LINK: '//*[@id="content"]/ul/li[10]/a',
     REDIRECT_LINK: '//*[@id="content"]/ul/li[36]/a',
     NOTIFICATION_MESSAGES_LINK: '//*[@id="content"]/ul/li[35]/a',
+    CHECKBOXES_LINK: '//*[@id="content"]/ul/li[6]/a',
   },
   LOGIN: {
     USERNAME_INPUT: '#username',
@@ -29,6 +30,9 @@ export const web = {
   NOTIFICATION: {
     NOTIFICATION_BUTTON: '//*[@id="content"]/div/p/a',
     MESSAGE_CONTAINER: '#flash',
+  },
+  CHECKBOXES: {
+    UNCHECKED: '//*[@id="checkboxes"]/input[1]',
   }
 };
 
