@@ -1,10 +1,10 @@
-
 export const web = {
   LINKS: {
     FORM_AUTH_LINK: '//*[@id="content"]/ul/li[21]/a',
     ADD_REMOVE_ELEMENT_LINK: '//*[@id="content"]/ul/li[2]/a',
     DRAG_AND_DROP_LINK: '//*[@id="content"]/ul/li[10]/a',
     REDIRECT_LINK: '//*[@id="content"]/ul/li[36]/a',
+    NOTIFICATION_MESSAGES_LINK: '//*[@id="content"]/ul/li[35]/a',
   },
   LOGIN: {
     USERNAME_INPUT: '#username',
@@ -25,6 +25,10 @@ export const web = {
     STATUS_CODE_PAGE: '#redirect',
     STATUS_200: '//*[@id="content"]/div/ul/li[1]/a',
     RESULT_TEXT: '//*[@id="content"]/div/p',
+  },
+  NOTIFICATION: {
+    NOTIFICATION_BUTTON: '//*[@id="content"]/div/p/a',
+    MESSAGE_CONTAINER: '#flash',
   }
 };
 
