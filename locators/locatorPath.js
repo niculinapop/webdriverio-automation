@@ -7,6 +7,7 @@ export const web = {
     NOTIFICATION_MESSAGES_LINK: '//*[@id="content"]/ul/li[35]/a',
     CHECKBOXES_LINK: '//*[@id="content"]/ul/li[6]/a',
     ENTRY_AD_LINK: '//*[@id="content"]/ul/li[15]/a',
+    DROPDOWN_LINK: '//*[@id="content"]/ul/li[11]/a'
   },
   LOGIN: {
     USERNAME_INPUT: '#username',
@@ -38,6 +39,10 @@ export const web = {
   ENTRY_AD: {
     MODAL_TITLE: '.modal-title',
     CLOSE_BUTTON: '//*[@id="modal"]/div[2]/div[3]/p',
+  },
+  DROPDOWN: {
+    DROPDOWN: '#dropdown',
+    OPTION1: '//*[@id="dropdown"]/option[2]'
   }
 };
 
